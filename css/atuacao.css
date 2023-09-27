@@ -1,0 +1,172 @@
+/* .atuacao {
+    text-align: center;
+    justify-content: center;
+    margin-top: 2vw;
+    position: relative;
+
+}
+
+.atuacao h2 {
+    color: #1C1C1C;
+    margin-bottom: 2rem;
+    position: relative;
+}
+
+.itens {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    justify-content: center;
+    margin-right: 1rem;
+    justify-content: center;
+}
+
+.imagem-item {
+    width: 15vw;
+    color: white;
+
+}
+
+.item {
+    padding: 1rem;
+    margin: 0vw 1vw;
+    color: white;
+    text-align: center;
+    border-radius: 5px;
+    max-width: 13vw;
+    background: #1C1C1C;
+
+}
+ */
+
+
+.imagem-item {
+    width: 18vw;
+    color: white;
+    border: 1px solid #c18f00;
+    border-radius: 5px;
+    
+
+}
+
+.container-itens {
+    display: grid;
+    grid-template-columns: minmax(300px,600px) minmax(300px, 600px) minmax(300px, 600px)  minmax(300px, 600px);
+    margin: 0 auto;
+    text-align: center;
+    justify-content: center;
+    padding-bottom: 5px;
+    margin-top: 2rem;
+    background: linear-gradient(to bottom, #FFF, #f4f4f5a5); 
+   
+}
+
+.container-itens h2 {
+    
+    display: grid;
+    grid-column: -1/1;
+    font-size: 'Volkorn';
+    font-weight: bold;
+    font-size: 2rem;
+}
+
+.container-itens span {
+    display: grid;
+    grid-column: -1/1;
+    font-size: 'Volkorn';
+    font-size: 1.25rem;
+    margin-bottom: 2rem
+}
+
+.item h3{
+    font-size: 1.25rem;
+    font-size: 'Volkorn';
+    font-weight: bold;
+
+}
+.item p {
+    padding-top: 15px;
+    line-height: 1.5;
+    text-align: left;
+    font-size: 1.12rem;
+    font-size: 'Volkorn';
+}
+
+.item{
+    background: #FFF;
+    border-radius: 5px;
+    padding: 20px 6px;
+    margin-bottom: 15px;
+   
+}
+
+.botao_atuacao {
+    margin-top: 2rem;
+    justify-items: center;
+}
+
+
+.areas_atuacao li {
+    line-height: 1.6;
+}
+
+
+.direitos {
+    text-align: center;
+    background: #000;
+    color: #FFF;
+}
+
+.links a {
+    color: white;
+}
+
+.foto-cabecalho {
+    width: 100%;
+    height: 20vh;
+
+}
+
+.img-logo {
+    width: 15vw;
+}
+
+
+.titulo {
+    text-align: center;
+    margin: 3rem 0px;
+}
+
+.container-especialidades {
+    width: 1200px;
+    margin: auto;
+
+}
+
+.itens-especialidades {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 30px;
+}
+
+.item {
+    justify-self: center;
+}
+
+@media (max-width:790px) {
+
+    .container-itens {
+       display: flex;
+       flex-direction: column;
+        
+    }
+
+    .item{
+       
+        max-width: 400px;
+       
+    }
+    .item p{
+        text-align: center;
+    }
+}

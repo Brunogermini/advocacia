@@ -1,0 +1,32 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    
+}
+a{
+    color: white;
+}
+html {
+    scroll-behavior: smooth
+}
+
+main {
+    margin-bottom: 5vw;
+    width: 100%;
+    margin: auto;
+}
+
+h3,
+p {
+    font-family: "Volkorn";
+    margin: 0px;
+    padding: 0px;
+}
+
+.mapa{
+    
+    padding-top: 20px;
+}
+body{
+    font-family: "Volkorn";
+}
