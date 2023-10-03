@@ -7,35 +7,32 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&family=Vollkorn:ital,wght@0,400;0,700;1,400&display=swap"
         rel="stylesheet">
+
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="./css/style.css">
     <link rel="shortcut icon" type="imagex/png" href="./img/WhatsApp_Image_2023-08-01_at_09.43.47-removebg-preview.png">
     <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
     <script src="./app.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <title>MG advocacia</title>
 </head>
 
 <body>
     <header>
 
-        <!-- <div class="nav-container"> -->
-        <!-- <div id="inicio" class="cabecalho">
-            <i class="uil uil-mobile-android"> (11) 949504527</i>
-            <i class="uil uil-envelope-check"> marciagermini@hotmail.com</i>
-            <i class="uil uil-clock"> Seg - Sex: 09:00 as 17:00</i>
-            <div class="social-media">
-
-            </div>
-        </div> -->
-        <!-- </div> -->
-
         <nav class="nav-bar">
             <img class="img-logo-topo" src="./img/WhatsApp_Image_2023-08-01_at_09.43.47-removebg-preview.png" alt="">
+            <div class="hamburguer">
+                <i class="uil uil-bars "></i>
+            </div>
             <ul class="menu ">
 
                 <li><a href="#inicio">Home</a></li>
                 <li><a href="#sobre">sobre</a></li>
                 <li><a href="#areas">Área de atuação</a></li>
-                <li><a class="link-cabecalho" onclick="form()"> Entre em contato</a></li>
+                <li><a id="contato"> Entre em contato</a></li>
+                <li><a id="contato" href="./processos.html"> Pesquise seu processo</a></li>
+
             </ul>
         </nav>
     </header>
@@ -74,13 +71,16 @@
         </form>
         <!-- <img src="./img/Advocacia-criminal_-o-que-é-e-como-trabalhar-nessa-área_.jpg" alt=""> -->
     </div>
-    <h2 class="sobre">Sobre a MG advocacia</h2>
-    <div id="sobre">
 
-        <img src="./img/240434718_586715145695166_7945631584939193129_n.jpg" alt="">
-        <div class="descricao">
-            <p>A advogada Dra. Marcia de Jesus Gesrmini atua na cidade de Poá – SP e Região, no Direito Previdenciário,
-                Direito Trabalhista e também no Direito Imobiliário.</p>
+    <div id="sobre">
+        <div data-aos="fade-right" data-aos-delay="250" data-aos-duration="1000">
+            <img src="./img/240434718_586715145695166_7945631584939193129_n.jpg" alt="">
+        </div>
+        <div class="descricao" data-aos="fade-left" data-aos-delay="250" data-aos-duration="1000">
+            <h2 class="sobre">Sobre a MG ADVOCACIA</h2>
+            <p>A advogada Dra. Marcia de Jesus Germini atua na cidade de Poá – SP e alto tietê, no Direito
+                Previdenciário,
+                Direito Trabalhista, Direito Civíl, Direito de Família e também no Direito Imobiliário.</p>
 
         </div>
     </div>
@@ -88,67 +88,67 @@
     <main>
 
         <article class="container-itens" id="areas">
-            <h2>Áreas de atuação</h2>
-            <span>Especialista no atendimento de Pessoa Fícica com enfoque em direito trabalhista, tributário,
-                previdencial, social</span>
-            <div class="item">
+            <h2>Áreas de Atuação</h2>
+            <!-- <span>Especialista no atendimento de Pessoa Física e Jurídica com enfoque em Direito Civíl, Trabalhista,
+                Previdenciário, Família e Imobiliário</span> -->
+            <div class="item" data-aos="fade-down" data-aos-delay="250" data-aos-duration="1000">
                 <img class="imagem-item" src="./img/carteira de trabalho.jpg" alt="">
-                <h3>Direito trabalhista</h3>
-                <p>Acompanhamento<br>
-                    Reclamação Trabalhista<br>
-                    Estabilidade Funcional<br>
-                    Equiparação Salarial<br>
-                    Indenização Dano Moral<br>
-                    Análise de Contrato<br>
-                    Cálculo de Hora Extra<br>
-                    Adicional de Insalubridade.</p>
+                <h3>Direito Trabalhista</h3>
+                <ul class="lista-atuacao">
+                    <li>Acompanhamento</li>
+                    <li> Reclamação Trabalhista</li>
+                    <li> Rescisão Indireta</li>
+                    <li> Estabilidade Funcional</li>
+                    <li>Equiparação Salarial</li>
+                    <li>Indenização Dano Moral</li>
+                    <li>Análise de Contrato</li>
+                    <li> Cálculo de Hora Extra</li>
+                    <li>Adicional de Insalubridade.</li>
+                </ul>
             </div>
-            <div class="item">
+            <div class="item" data-aos="fade-up" data-aos-delay="250" data-aos-duration="1000">
                 <img class="imagem-item" src="./img/previdencia.png" alt="">
                 <h3>Direito Previdenciário</h3>
-                <p>Ação de Aposentadoria<br>
-                    Revisão de Benefício<br>
-                    Auxílio Incapacidade<br>
-                    BPC e Loas<br>
-                    Tutela de Urgência<br>
-                    Despachos com Juiz<br>
-                    Cálculo de Aposentadoria<br>
-                    Análise de PPP</p>
+                <ul class="lista-atuacao">
+                    <li>Ação de Aposentadoria</li>
+                    <li> Revisão de Benefício</li>
+                    <li> Auxílio Incapacidade</li>
+                    <li> BPC e Loas</li>
+                    <li>Tutela de Urgência</li>
+                    <li> Despachos com Juiz</li>
+                    <li>Cálculo de Aposentadoria</li>
+                    <li>Análise de PPP</li>
+
             </div>
-            <div class="item">
+            <div class="item" data-aos="fade-down" data-aos-delay="250" data-aos-duration="1000">
                 <img class="imagem-item" src="./img/familia 2.jpg" alt="">
                 <h3>Direito Familiar</h3>
-                <p>Ação de Alimentos<br>
-                    Conciliação<br>
-                    Divórcio<br>
-                    Inventário e Partilha<br>
-                    Sucessão<br>
-                    Dano Moral<br>
-                    Assessoria Patrimonial</p>
+                <ul class="lista-atuacao">
+                    <li>Ação de Alimentos</li>
+                    <li>Conciliação</li>
+                    <li>Divórcio</li>
+                    <li>Inventário e Partilha</li>
+                    <li>Sucessão</li>
+                    <li>Dano Moral</li>
+                    <li>Assessoria Patrimonial</li>
+                    <li>Investigação de Paternidade</li>
+                </ul>
             </div>
 
-            <div class="item">
-                <img class="imagem-item" src="./img/familia.jpg" alt="">
-                <h3>Direito Familiar</h3>
-                <p>Ação de Alimentos<br>
-                    Conciliação<br>
-                    Divórcio<br>
-                    Inventário e Partilha<br>
-                    Sucessão<br>
-                    Dano Moral<br>
-                    Assessoria Patrimonial</p>
+            <div class="item" data-aos="fade-up" data-aos-delay="250" data-aos-duration="1000">
+                <img class="imagem-item" src="./img/direito-civil.jpg" alt="">
+                <h3>Direito Civíl</h3>
+                <ul class="lista-atuacao">
+                    <li>Indenização</li>
+                    <li>Ação de Cobrança</li>
+                    <li>Direito das Obrigações e <br>Contratos</li>
+                    <li>Relações de Consumo</li>
+                    <li>Direito das Coisas</li>
+                    <li>Responsabilidade Civíl</li>
+
+                </ul>
             </div>
-            <div class="item">
-                <img class="imagem-item" src="./img/familia.jpg" alt="">
-                <h3>Direito Familiar</h3>
-                <p>Ação de Alimentos<br>
-                    Conciliação<br>
-                    Divórcio<br>
-                    Inventário e Partilha<br>
-                    Sucessão<br>
-                    Dano Moral<br>
-                    Assessoria Patrimonial</p>
-            </div>
+
 
         </article>
     </main>
@@ -164,31 +164,36 @@
 
             <div class="links">
                 <ul class="areas_atuacao">
-                    <li class="titulo-atuacao">ÁREAS DE ATUAÇÃO </li>
+                    <h3 class="titulo-atuacao">ÁREAS DE ATUAÇÃO </h3>
                     <br>
-                    <li><a href="">Previdenciário</a></li>
-                    <li><a href="">Cívil</a></li>
-                    <li><a href="">Trabalhista</a></li>
-                    <li><a href="">Aposentadoria</a></li>
+                    <li>Cívil</li>
+                    <li>Trabalhista</li>
+                    <li>Previdenciário</li>
+                    <li>Família</li>
+                    <li>Imobiliário</li>
                 </ul></i>
             </div>
 
             <!-- <div class="contato"> -->
             <div class="mapa">
-                <h3 class="mapa-endereco">Endereço</h3>
+                <h3 class="mapa-endereco"></h3>
                 <iframe
                     src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3658.169836537158!2d-46.34715492614891!3d-23.526393160305666!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce7ade37dfe5cb%3A0xef808a9c16b43a57!2sR.%20Vinte%20e%20Seis%20de%20Mar%C3%A7o%2C%2026%20-%20Centro%2C%20Po%C3%A1%20-%20SP%2C%2008562-140!5e0!3m2!1sen!2sbr!4v1695739864532!5m2!1sen!2sbr"
                     width="400" height="250" style="border:0;" allowfullscreen="" loading="lazy"
                     referrerpolicy="no-referrer-when-downgrade"></iframe>
             </div>
             <ul class="contato-lista">
-                <h3>Contatos</h3>
-                    <li><i class="uil uil-map-marker"> Rua 26 de março 26 <br> Poá - São Paulo, SP - CEP 08568000</i></li>
-                    <br>
-                    <li><i class="uil uil-envelope-check">  marciagermini@hotmail.com</i></li>
-                    <br>
-                    <li><i class="uil uil-mobile-android"> (11) 94950-4527</i></li>
-                    <li><i class="uil uil-phone telefone"> (11) 4634-1706</i></li> 
+                <h3>CONTATOS</h3>
+                <br>
+                <li><i class="uil uil-map-marker"> Rua 26 de março, N° 26 Sala 14 <br> Poá - São Paulo, SP - CEP
+                        08568000</i></li>
+                <br>
+                <a href="malito:marciagermini@hotmail.com"><i class="uil uil-envelope-check">marciagermini@hotmail.com</i></a>
+
+                <li><i class="uil uil-envelope-check"> marciagermini@adv.oabsp.org.br</i></li>
+                <br>
+                <li><i class="uil uil-mobile-android"> (11) 97783-7223</i></li>
+                <li><i class="uil uil-phone telefone"> (11) 4639-7063</i></li>
             </ul>
 
         </div>
@@ -197,20 +202,47 @@
         </div>
 
     </footer>
+    <a href="https://api.whatsapp.com/send?phone=5511977837223&text=Quero%20fazer%20um%20agendamento"
+        class="btn-whatsapp" target="_blank" data-aos="zoom-in-up" data-aos-delay="250">
 
+        <img src="./img/whatssapp.svg" alt="">
+        <span class="tooltip-text">Agende uma consulta</span></a>
 </body>
 <script>
 
+    let btn = document.querySelector("#contato")
+    let formulario1 = document.querySelector("#formulario-contato")
 
+    btn.addEventListener('click', function () {
 
-    let formulario = document.getElementById("formulario-contato")
+        if (formulario1.style.display === 'block') {
+            formulario1.style.display = 'none';
+        } else {
+            formulario1.style.display = 'block'
+        }
+        formulario1.className = "desaparecer"
+    })
 
-    function form() {
+    let hamburguer = document.querySelector(".hamburguer")
+    let menu = document.querySelector(".menu")
 
-        formulario.className = "mostre-formulario"
-    }
+    hamburguer.addEventListener('click', function () {
 
+        if (menu.style.display === 'block') {
+            menu.style.display = 'none';
+        } else {
+            menu.style.display = 'block'
+        }
 
+    })
+
+    // let formulario = document.getElementById("formulario-contato")
+    // function form() {
+
+    //     formulario.className = "mostre-formulario"
+    // }
+
+    AOS.init();
 
 
 </script>

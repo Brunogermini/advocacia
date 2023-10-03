@@ -15,7 +15,7 @@ header{
     color: white;
 }
 .img-logo-topo {
-    width: 7rem;
+    width: 5rem;
     
 }
 
@@ -25,8 +25,9 @@ header{
     justify-content: space-around;
     gap: 20px;
     max-width: 100%;
-    background: black;
+    background: rgba(0,0,0,0.6);
     color: white;
+    
 }
 
 .foco {
@@ -52,8 +53,7 @@ header{
 
 
 form {
-    opacity: 0;
-    transition: opacity 1s linear;
+    display: none;
     background-color: white;
     border-radius: 10px;
     float: right;
@@ -61,11 +61,19 @@ form {
     bottom: 50px;
     margin-right: 1vw;
     margin-top: 1vw;
+    animation-name: fade;
+    animation-duration: 0.7s;
 }
 
-.mostre-formulario {
-    opacity: 1;
+@keyframes fade{
+from{
+    opacity: 0;
+    transform: scale(0.9);
 }
+to{
+    opacity: 1;
+    transform: scale(1);
+}}
 
 input {
     display: block;
@@ -112,7 +120,6 @@ button {
 }
 
 .menu {
-   
     align-self: center;
     display: flex;
     gap: 25px;
@@ -125,18 +132,23 @@ button {
 }
 
 .menu a {
+    
     color: #1C1C1C;
-    padding: 16px 32px;
+    padding: 12px 32px;
     border: 1px solid transparent;
     color: white;
+    font-size: 14px;
+    margin: 0 auto;
 }
 
 .menu li {
+    text-align: center;
     cursor: pointer;
     border-radius: 4px;
     text-transform: uppercase;
     list-style: none;
     margin: 0; 
+    
 }
 
 .logo {
@@ -153,7 +165,51 @@ button {
     border-bottom-right-radius: 5px;
 }
 
-@media (max-width: 1000px) {
+.hamburguer{
+    display: none;
+}
+
+@media (max-width: 1078px) {
+
+    .hamburguer{
+        display:flex ;
+        align-items: center;
+        cursor: pointer;
+        padding: 10px 10px;
+       
+        
+    }
+
+    .menu {
+        display: none;
+        position: absolute;
+        top: 13.1vh;
+        right: 65px;
+        width: 35vw;
+        height: 40vh;
+        background: linear-gradient(to bottom, rgba(62,69,81,.3), rgba(0,0,0,0.7));
+        text-align: center;
+        color: white;
+        z-index: 99;
+        opacity: 0.7;
+        padding: 20px 0px;
+       
+    }
+
+    .menu li + li {
+margin-top: 30px;
+    }
+.img-logo-topo{
+    z-index: 999;
+}
+
+.nav-bar{
+    justify-content: space-around;
+}
+}
+
+
+/* @media (max-width: 1000px) {
 
     .cabecalho {
         padding: .1rem;
@@ -192,9 +248,9 @@ button {
        display: inline-block;
     }
 
-}
+} */
 
-@media (max-width:420px){
+/* @media (max-width:420px){
 
     .cabecalho {
         padding: .5rem;
@@ -219,4 +275,4 @@ button {
 
 
 
-}
+} */

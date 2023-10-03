@@ -1,49 +1,7 @@
-/* .atuacao {
-    text-align: center;
-    justify-content: center;
-    margin-top: 2vw;
-    position: relative;
-
-}
-
-.atuacao h2 {
-    color: #1C1C1C;
-    margin-bottom: 2rem;
-    position: relative;
-}
-
-.itens {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 15px;
-    justify-content: center;
-    margin-right: 1rem;
-    justify-content: center;
-}
-
-.imagem-item {
-    width: 15vw;
-    color: white;
-
-}
-
-.item {
-    padding: 1rem;
-    margin: 0vw 1vw;
-    color: white;
-    text-align: center;
-    border-radius: 5px;
-    max-width: 13vw;
-    background: #1C1C1C;
-
-}
- */
-
 
 .imagem-item {
     width: 18vw;
     color: white;
-    border: 1px solid #c18f00;
     border-radius: 5px;
     
 
@@ -56,18 +14,23 @@
     text-align: center;
     justify-content: center;
     padding-bottom: 5px;
-    margin-top: 2rem;
-    background: linear-gradient(to bottom, #FFF, #f4f4f5a5); 
+    margin-top: 1rem;
+    
+    /* background: linear-gradient(to bottom,#ebebf0a5, #FFF );  */
+    
    
 }
 
 .container-itens h2 {
-    
+    margin-bottom: 20px;
     display: grid;
     grid-column: -1/1;
     font-size: 'Volkorn';
     font-weight: bold;
     font-size: 2rem;
+    color: #e8e8e8;
+    
+    
 }
 
 .container-itens span {
@@ -75,27 +38,34 @@
     grid-column: -1/1;
     font-size: 'Volkorn';
     font-size: 1.25rem;
-    margin-bottom: 2rem
+    margin-bottom: 2rem;
+    color: #c0c0c0;
 }
 
 .item h3{
     font-size: 1.25rem;
     font-size: 'Volkorn';
     font-weight: bold;
+    color: #696969;
 
 }
-.item p {
-    padding-top: 15px;
+.lista-atuacao {
+    padding: 15px;
     line-height: 1.5;
     text-align: left;
     font-size: 1.12rem;
     font-size: 'Volkorn';
+    color: #9c9c9c;
+    
+}
+.lista-atuacao li{
+    list-style:circle ;
 }
 
 .item{
     background: #FFF;
     border-radius: 5px;
-    padding: 20px 6px;
+    padding: 20px 15px;
     margin-bottom: 15px;
    
 }
@@ -153,12 +123,20 @@
     justify-self: center;
 }
 
+
+@media (max-width: 1078px) {
+
+    .container-itens {
+        grid-template-columns: 500px 500px;
+         
+     }
+}
+
 @media (max-width:790px) {
 
     .container-itens {
-       display: flex;
-       flex-direction: column;
-        
+     
+        grid-template-columns: 500px 500px;
     }
 
     .item{
