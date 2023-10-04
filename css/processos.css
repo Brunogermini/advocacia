@@ -319,8 +319,9 @@ font-style:normal;
 
     .container-footer{
     grid-template-areas: 
-    "logo links "
-    "mapa contato";
+    "logo logo "
+    "links contato"
+    "mapa mapa";
     padding: 0px;
     max-width: 100%;
 }   
@@ -353,7 +354,7 @@ iframe{
 }
 
 .hamburguer{
-    display: flex;
+    display: none;
 }
 
 @media (max-width: 1078px) {
@@ -391,7 +392,7 @@ iframe{
 @media (max-width: 786px){
 
     .container-itens{
-        grid-template-columns: 1fr ;
+        grid-template-columns: 340px ;
     }
 
     .menu {
@@ -399,45 +400,16 @@ iframe{
         right: 4px;
     }
 
-    
+    .container-footer {
+      
+        grid-template-areas: 
+        "logo logo"
+        "links contato"
+        "mapa mapa";
+    }
+
+    .img-processos{
+        width: 300px;
+    }
 }
 
-/* /* .btn-whatsapp {
-    position: fixed;
-    bottom: 15px;
-    right: 24px;
-    z-index: 99;
-  }
-  .btn-whatsapp img {
-    max-width: 50px;
-    transition: transform 1.4S;
-  }
-  .btn-whatsapp img:hover {
-    transform: scale(1.1);
-  }
-  
-  .btn-whatsapp .tooltip-text {
-    visibility: hidden;
-    position: absolute;
-    width: 120px;
-    top: 8px;
-    left: -144px;
-    padding: 6px;
-    border-radius: 4px;
-    text-align: center;
-    background-color: #232224;
-    color: #fff;
-    opacity: 0;
-    transition: opacity 0.5s;
-  }
-  
-  .btn-whatsapp:hover .tooltip-text {
-    visibility: visible;
-    opacity: 1;
-  }
-
-  @media screen and (max-width: 768px) {
-    .btn-whatsapp img {
-      width: 47px;
-    }
-  }  */
