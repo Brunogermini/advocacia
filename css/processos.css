@@ -121,6 +121,7 @@ button {
     align-self: center;
     display: flex;
     gap: 25px;
+    text-align: center;
 
 }
 
@@ -179,7 +180,7 @@ button {
     }
 
     .menu {
-        display: block;
+        /* display: block; */
         position: absolute;
         top: 12vh;
         right: 65px;
@@ -189,9 +190,9 @@ button {
         text-align: center;
         color: white;
         z-index: 99;
-        opacity: 0.7;
+        
         padding: 20px 0px;
-        transition: transfo;
+        
     }
 
     .menu li + li {
@@ -312,13 +313,16 @@ font-style:normal;
 .contato-lista h3{
     font-family: 'Volkorn';
     font-size: 16px;
+    text-align: center;
 }
 @media (max-width: 800px){
 
     .container-footer{
     grid-template-areas: 
-    "logo links"
-    "mapa mapa";
+    "logo links "
+    "mapa contato";
+    padding: 0px;
+    max-width: 100%;
 }   
 
 .info-rodape{
@@ -348,7 +352,57 @@ iframe{
 }
 }
 
-/* .btn-whatsapp {
+.hamburguer{
+    display: flex;
+}
+
+@media (max-width: 1078px) {
+
+    .hamburguer{
+        display:flex ;
+        align-items: center;
+        cursor: pointer;
+        padding: 10px 10px;     
+        
+    }
+
+    .menu {
+        display: none;
+        position: absolute;
+        top: 13.1vh;
+        right: 65px;
+        width: 35vw;
+        height: 40vh;
+        background: rgba(0,0,0,1);
+        text-align: center;
+        color: white;
+        z-index: 99;
+        opacity: 0.7;
+        padding: 20px 0px;
+        text-align: center;
+       
+    }
+
+    .container-itens{
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (max-width: 786px){
+
+    .container-itens{
+        grid-template-columns: 1fr ;
+    }
+
+    .menu {
+        top: 72px;
+        right: 4px;
+    }
+
+    
+}
+
+/* /* .btn-whatsapp {
     position: fixed;
     bottom: 15px;
     right: 24px;
@@ -386,4 +440,4 @@ iframe{
     .btn-whatsapp img {
       width: 47px;
     }
-  } */
+  }  */
