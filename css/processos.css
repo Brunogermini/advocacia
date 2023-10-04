@@ -406,6 +406,8 @@ iframe{
         "logo logo"
         "links contato"
         "mapa mapa";
+
+        padding: 0px 16px;
     }
 
     .img-processos{
