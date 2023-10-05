@@ -13,7 +13,6 @@ html {
 main {
     margin-bottom: 5vw;
     width: 100%;
-    margin: auto;
 }
 
 h3,
@@ -37,7 +36,7 @@ body{
 .btn-whatsapp {
     position: fixed;
     bottom: 15px;
-    right: 24px;
+    right: 60px;
     z-index: 99;
   }
   .btn-whatsapp img {
@@ -69,6 +68,9 @@ body{
   }
 
   @media screen and (max-width: 768px) {
+    body{
+      max-width: 100%;
+    }
     .btn-whatsapp img {
       width: 47px;
     }

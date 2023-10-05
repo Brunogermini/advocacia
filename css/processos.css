@@ -373,19 +373,23 @@ iframe{
         top: 13.1vh;
         right: 65px;
         width: 35vw;
-        height: 40vh;
+        height: 15vh;
         background: rgba(0,0,0,1);
         text-align: center;
         color: white;
         z-index: 99;
         opacity: 0.7;
-        padding: 20px 0px;
+        padding: 10px 0px;
         text-align: center;
        
     }
 
     .container-itens{
         grid-template-columns: 1fr 1fr;
+    }
+
+    .menu li{
+        display: flex;
     }
 }
 
@@ -406,7 +410,7 @@ iframe{
         "logo logo"
         "links contato"
         "mapa mapa";
-
+    
         padding: 0px 16px;
     }
 
