@@ -2,30 +2,35 @@
     margin: 0;
     padding: 0;
 }
-body{
+
+body {
     position: relative;
-    background: linear-gradient(to bottom, rgba(62,69,81,.3), rgba(0,0,0,0.7));
-   
+    background: linear-gradient(to bottom, rgba(62, 69, 81, .3), rgba(0, 0, 0, 0.7));
+
 }
-header{
+
+header {
     max-width: 100%;
 }
+
 .cabecalho {
     padding: .5rem;
     display: flex;
     gap: 4rem;
     justify-content: center;
-    
+
     color: #ffffffff;
 }
-.cabecalho i{
+
+.cabecalho i {
 
     color: white;
 }
+
 .img-logo-topo {
     width: 5rem;
-   
-    
+
+
 }
 
 .nav-bar {
@@ -34,9 +39,9 @@ header{
     justify-content: space-around;
     gap: 20px;
     max-width: 100%;
-    background: rgba(0,0,0,0.6);
+    background: rgba(0, 0, 0, 0.6);
     color: white;
-    
+
 }
 
 .foco {
@@ -63,15 +68,17 @@ form {
     animation-duration: 0.7s;
 }
 
-@keyframes fade{
-from{
-    opacity: 0;
-    transform: scale(0.9);
+@keyframes fade {
+    from {
+        opacity: 0;
+        transform: scale(0.9);
+    }
+
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
 }
-to{
-    opacity: 1;
-    transform: scale(1);
-}}
 
 input {
     display: block;
@@ -131,7 +138,7 @@ button {
 }
 
 .menu a {
-    
+
     color: #1C1C1C;
     padding: 12px 32px;
     border: 1px solid transparent;
@@ -146,8 +153,8 @@ button {
     border-radius: 4px;
     text-transform: uppercase;
     list-style: none;
-    margin: 0; 
-    
+    margin: 0;
+
 }
 
 .logo {
@@ -164,19 +171,19 @@ button {
     border-bottom-right-radius: 5px;
 }
 
-.hamburguer{
+.hamburguer {
     display: none;
 }
 
 @media (max-width: 1078px) {
 
-    .hamburguer{
-        display:flex ;
+    .hamburguer {
+        display: flex;
         align-items: center;
         cursor: pointer;
         padding: 10px 10px;
-       
-        
+
+
     }
 
     .menu {
@@ -186,25 +193,26 @@ button {
         right: 65px;
         width: 35vw;
         height: 40vh;
-        background: black; 
+        background: black;
         text-align: center;
         color: white;
         z-index: 99;
-        
+
         padding: 20px 0px;
-        
+
     }
 
-    .menu li + li {
-margin-top: 30px;
+    .menu li+li {
+        margin-top: 30px;
     }
-.img-logo-topo{
-    z-index: 999;
-}
 
-.nav-bar{
-    justify-content: space-around;
-}
+    .img-logo-topo {
+        z-index: 999;
+    }
+
+    .nav-bar {
+        justify-content: space-around;
+    }
 }
 
 .container-itens {
@@ -250,8 +258,8 @@ a {
 .container-footer {
     border-top: 1px solid black;
     display: grid;
-    grid-template-areas: 
-    "logo links  mapa contato";
+    grid-template-areas:
+        "logo links  mapa contato";
     justify-items: center;
     gap: 1rem;
     padding-left: 1rem;
@@ -260,21 +268,24 @@ a {
     margin-top: 30px;
     max-width: 100%;
     padding-bottom: 20px;
-    background: rgba(0,0,0,0.3);
- 
-}
-iframe{
-    max-width: 100%;
-}
-.mapa-endereco{
-    text-align: center;
-    padding-bottom : 10px;
-   
+    background: rgba(0, 0, 0, 0.3);
+
 }
 
-.areas_atuacao h3{
+iframe {
+    max-width: 100%;
+}
+
+.mapa-endereco {
+    text-align: center;
+    padding-bottom: 10px;
+
+}
+
+.areas_atuacao h3 {
     font-size: 16px;
 }
+
 .logo {
     justify-items: center;
     margin-top: 1rem;
@@ -286,7 +297,7 @@ iframe{
 
 .links {
     margin-top: 1rem;
-    cursor :default
+    cursor: default
 }
 
 a {
@@ -301,70 +312,78 @@ li {
     width: 10vw;
 }
 
-.contato-lista{
+.contato-lista {
     text-align: center;
     margin-top: 1rem;
     margin-bottom: 1rem;
     text-align: left;
 }
-.contato-lista i{
-font-style:normal;
+
+.contato-lista i {
+    font-style: normal;
 }
-.contato-lista h3{
+
+.contato-lista h3 {
     font-family: 'Volkorn';
     font-size: 16px;
     text-align: center;
 }
-@media (max-width: 800px){
 
-    .container-footer{
-    grid-template-areas: 
-    "logo logo "
-    "links contato"
-    "mapa mapa";
-    padding: 0px;
-    max-width: 100%;
-}   
+@media (max-width: 800px) {
 
-.info-rodape{
-    grid-area: logo;
+    .container-footer {
+        grid-template-areas:
+            "logo logo "
+            "links contato"
+            "mapa mapa";
+        padding: 0px;
+        max-width: 100%;
+    }
+
+    .info-rodape {
+        grid-area: logo;
+    }
+
+    .links {
+        grid-area: links;
+    }
+
+    .contato-lista {
+        grid-area: contato
+    }
+
+    .mapa {
+        grid-area: mapa;
+
+    }
+
+
+    iframe {
+
+        grid-column: 1/-1;
+    }
+
+    .img-logo {
+        width: 25vw;
+    }
 }
 
-.links{
-    grid-area: links;
-}
-
-.contato-lista{
-    grid-area: contato
-}
-
-.mapa{
-    grid-area: mapa;
-  
-}
-
-
-iframe{
-    
-    grid-column: 1/-1;
-}
-.img-logo {
-    width: 25vw;
-}
-}
-
-.hamburguer{
+.hamburguer {
     display: none;
 }
 
 @media (max-width: 1078px) {
 
-    .hamburguer{
-        display:flex ;
+    body {
+        overflow-x: hidden;
+    }
+
+    .hamburguer {
+        display: flex;
         align-items: center;
         cursor: pointer;
-        padding: 10px 10px;     
-        
+        padding: 10px 10px;
+
     }
 
     .menu {
@@ -374,40 +393,40 @@ iframe{
         right: 65px;
         width: 35vw;
         height: 17vh;
-        background: rgba(0,0,0,1);
+        background: rgba(0, 0, 0, 1);
         text-align: center;
         color: white;
         z-index: 99;
         opacity: 0.7;
         padding: 10px 0px;
         text-align: center;
-       
+
     }
 
-    .container-itens{
+    .container-itens {
         grid-template-columns: 1fr 1fr;
     }
 
-    .menu li{
+    .menu li {
         display: flex;
     }
 }
 
-@media (max-width: 786px){
+@media (max-width: 786px) {
 
-    .hamburguer{
+    .hamburguer {
         padding: 0px;
     }
 
 
-    .container-itens{
+    .container-itens {
         max-width: 340px;
         display: flex;
         flex-direction: column;
         margin: 0 auto;
     }
 
-    .item{
+    .item {
         justify-content: center;
     }
 
@@ -417,17 +436,16 @@ iframe{
     }
 
     .container-footer {
-      
-        grid-template-areas: 
-        "logo logo"
-        "links contato"
-        "mapa mapa";
-    
+
+        grid-template-areas:
+            "logo logo"
+            "links contato"
+            "mapa mapa";
+
         padding: 0px 16px;
     }
 
-    .img-processos{
+    .img-processos {
         max-width: 250px;
     }
 }
-
