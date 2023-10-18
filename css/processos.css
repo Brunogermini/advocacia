@@ -370,10 +370,10 @@ iframe{
     .menu {
         display: none;
         position: absolute;
-        top: 13.1vh;
+        top: 13.4vh;
         right: 65px;
         width: 35vw;
-        height: 15vh;
+        height: 17vh;
         background: rgba(0,0,0,1);
         text-align: center;
         color: white;
@@ -395,12 +395,24 @@ iframe{
 
 @media (max-width: 786px){
 
+    .hamburguer{
+        padding: 0px;
+    }
+
+
     .container-itens{
-        grid-template-columns: 340px ;
+        max-width: 340px;
+        display: flex;
+        flex-direction: column;
+        margin: 0 auto;
+    }
+
+    .item{
+        justify-content: center;
     }
 
     .menu {
-        top: 72px;
+        top: 9vh;
         right: 4px;
     }
 
@@ -415,7 +427,7 @@ iframe{
     }
 
     .img-processos{
-        width: 300px;
+        max-width: 250px;
     }
 }
 
